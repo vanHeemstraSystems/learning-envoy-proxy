@@ -1,0 +1,52 @@
+# Example: Manually injected Envoy sidecar (without Istio auto-injection)
+# In production, prefer Istio auto-injection via namespace label
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: my-app
+          image: kennethreitz/httpbin:latest
+          ports:
+            - containerPort: 8080
+          # App binds to localhost only — Envoy handles external traffic
+          env:
+            - name: PORT
+              value: "8080"
+
+        - name: envoy-sidecar
+          image: envoyproxy/envoy:v1.29-latest
+          args:
+            - "-c"
+            - "/etc/envoy/envoy.yaml"
+            - "--log-level"
+            - "info"
+          ports:
+            - containerPort: 10000   # Inbound proxy port
+            - containerPort: 9901    # Admin port
+          volumeMounts:
+            - name: envoy-config
+              mountPath: /etc/envoy
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 200m
+              memory: 128Mi
+
+      volumes:
+        - name: envoy-config
+          configMap:
+            name: envoy-sidecar-config

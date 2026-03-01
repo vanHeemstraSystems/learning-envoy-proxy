@@ -1,0 +1,14 @@
+services:
+  envoy:
+    image: envoyproxy/envoy:v1.29-latest
+    command: -c /etc/envoy/envoy.yaml --log-level info
+    ports:
+      - "10000:10000"
+      - "9901:9901"
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml
+
+  upstream:
+    image: kennethreitz/httpbin:latest
+    ports:
+      - "8080:80"

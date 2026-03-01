@@ -1,0 +1,21 @@
+# HTTP routing demo
+# curl http://localhost:10000/api/a/get          → service-a
+# curl http://localhost:10000/api/b/get          → service-b
+# curl -H "Host: service-a.local" http://localhost:10000/get  → service-a
+
+services:
+  envoy:
+    image: envoyproxy/envoy:v1.29-latest
+    command: -c /etc/envoy/envoy.yaml --log-level info
+    ports:
+      - "10000:10000"
+      - "9901:9901"
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml
+
+  service-a:
+    image: kennethreitz/httpbin:latest
+
+  service-b:
+    image: hashicorp/http-echo:latest
+    command: ["-text=Hello from Service B", "-listen=:8080"]

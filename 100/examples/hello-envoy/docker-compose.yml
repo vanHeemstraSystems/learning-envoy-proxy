@@ -1,0 +1,20 @@
+# docker-compose.yml — Hello Envoy
+# Usage: docker compose up
+# Then: curl http://localhost:10000/get
+#       curl http://localhost:10000/headers
+# Admin: curl http://localhost:9901/stats
+
+services:
+  envoy:
+    image: envoyproxy/envoy:v1.29-latest
+    command: -c /etc/envoy/envoy.yaml --log-level info
+    ports:
+      - "10000:10000"   # Proxy port
+      - "9901:9901"     # Admin port
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml
+
+  httpbin:
+    image: kennethreitz/httpbin:latest
+    ports:
+      - "8080:80"

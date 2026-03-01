@@ -1,6 +1,6 @@
 # Learning Envoy Proxy
 
-Based on “Learning Envoy Proxy” at https://github.com/vanHeemstraSystems/learning-envoyproxy
+Based on "Learning Envoy Proxy" at https://github.com/vanHeemstraSystems/learning-envoy-proxy
 
 Envoy Proxy is a high-performance, open-source edge and service proxy designed for cloud-native applications. Originally built at Lyft, it has become the de facto data plane for service meshes (including Istio) and is widely used in platforms such as Azure Kubernetes Service (AKS). This repository provides a systematic, hands-on approach to mastering Envoy Proxy — from core concepts to advanced traffic management and observability integrations.
 
@@ -169,10 +169,10 @@ Before working through this repository, ensure you have the following tools inst
 
 ## Getting Started
 
-1. Clone this repository: `git clone https://github.com/vanHeemstraSystems/learning-envoy-proxy`
-1. Navigate to `100/` and read `100-what-is-envoy.md` to build a conceptual foundation.
-1. Follow the numbered sections sequentially — each builds on the previous.
-1. Run the Docker Compose examples in each `examples/` subdirectory to reinforce theory with practice.
+1. Clone this repository: `git clone https://github.com/vanHeemstraSystems/learning-envoyproxy`
+2. Navigate to `100/` and read `100-what-is-envoy.md` to build a conceptual foundation.
+3. Follow the numbered sections sequentially — each builds on the previous.
+4. Run the Docker Compose examples in each `examples/` subdirectory to reinforce theory with practice.
 
 ## Learning Path
 
@@ -184,16 +184,16 @@ Before working through this repository, ensure you have the following tools inst
 
 ## Key Concepts at a Glance
 
-|Concept     |Description                                                  |
-|------------|-------------------------------------------------------------|
-|Listener    |Network entry point that accepts connections on a port       |
-|Filter Chain|Pipeline of filters applied to traffic through a listener    |
-|Cluster     |Group of upstream endpoints Envoy can forward traffic to     |
-|Route       |Rules that map incoming requests to clusters                 |
-|xDS API     |Dynamic discovery service APIs (LDS, RDS, CDS, EDS, SDS, ADS)|
-|HCM         |HTTP Connection Manager — the core HTTP filter in Envoy      |
-|mTLS        |Mutual TLS for service-to-service authentication             |
-|WASM        |WebAssembly for writing portable Envoy extensions            |
+| Concept | Description |
+|---|---|
+| Listener | Network entry point that accepts connections on a port |
+| Filter Chain | Pipeline of filters applied to traffic through a listener |
+| Cluster | Group of upstream endpoints Envoy can forward traffic to |
+| Route | Rules that map incoming requests to clusters |
+| xDS API | Dynamic discovery service APIs (LDS, RDS, CDS, EDS, SDS, ADS) |
+| HCM | HTTP Connection Manager — the core HTTP filter in Envoy |
+| mTLS | Mutual TLS for service-to-service authentication |
+| WASM | WebAssembly for writing portable Envoy extensions |
 
 ## Resources
 
@@ -222,8 +222,8 @@ Cloud Engineer
 
 ## License
 
-MIT License — see <LICENSE> for details.
+MIT License — see [LICENSE](LICENSE) for details.
 
------
+---
 
 **Last Updated**: February 2026
