@@ -1,6 +1,6 @@
-# 900 - Best Practices and Atlas IDP Integration
+# 900 - Best Practices and Integration
 
-This section consolidates production best practices and covers Envoy's integration with Kubernetes, AKS, and the Atlas IDP platform.
+This section consolidates production best practices and covers Envoy's integration with Kubernetes, AKS, and an Internal Developer Platform (IDP).
 
 ## Contents
 
@@ -10,5 +10,5 @@ This section consolidates production best practices and covers Envoy's integrati
 | [200-kubernetes-integration.md](200-kubernetes-integration.md) | Envoy on Kubernetes: ingress, sidecar, configmap |
 | [300-istio-and-envoy.md](300-istio-and-envoy.md) | How Istio uses Envoy under the hood |
 | [400-envoy-on-aks.md](400-envoy-on-aks.md) | Azure Kubernetes Service specifics |
-| [500-atlas-idp-patterns.md](500-atlas-idp-patterns.md) | Envoy patterns in the Atlas IDP |
+| [500-idp-patterns.md](500-idp-patterns.md) | Envoy patterns in an IDP |
 | [600-troubleshooting.md](600-troubleshooting.md) | Debugging Envoy with admin API and logs |
