@@ -16,7 +16,7 @@ This learning repository covers Envoy Proxy architecture, xDS API, listener/clus
 - [600 - Observability](#600---observability)
 - [700 - Security](#700---security)
 - [800 - Extensions and WebAssembly](#800---extensions-and-webassembly)
-- [900 - Best Practices and Atlas IDP Integration](#900---best-practices-and-atlas-idp-integration)
+- [900 - Best Practices and Integration](#900---best-practices-and-integration)
 
 ## Directory Structure
 
