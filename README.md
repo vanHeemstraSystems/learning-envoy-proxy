@@ -167,7 +167,7 @@ Before working through this repository, ensure you have the following tools inst
 
 ## Getting Started
 
-1. Clone this repository: `git clone https://github.com/vanHeemstraSystems/learning-envoyproxy`
+1. Clone this repository: `git clone https://github.com/vanHeemstraSystems/learning-envoy-proxy`
 2. Navigate to `100/` and read `100-what-is-envoy.md` to build a conceptual foundation.
 3. Follow the numbered sections sequentially — each builds on the previous.
 4. Run the Docker Compose examples in each `examples/` subdirectory to reinforce theory with practice.
