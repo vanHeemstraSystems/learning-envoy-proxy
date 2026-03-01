@@ -1,8 +1,8 @@
-# Envoy Patterns in the Atlas IDP
+# Envoy Patterns in an IDP
 
 ## Context
 
-The Atlas IDP is built on Azure Kubernetes Service (AKS) using Crossplane for infrastructure provisioning and Flux for GitOps-based delivery. Envoy appears in Atlas as:
+An IDP built on Azure Kubernetes Service (AKS) using Crossplane for infrastructure provisioning and Flux for GitOps-based delivery. Envoy appears in the IDP as:
 
 1. The data plane of Istio (installed as an AKS add-on)
 2. The proxy engine behind Contour (an ingress controller alternative to NGINX Ingress)
@@ -77,7 +77,7 @@ spec:
 
 ## Pattern 4: JWT Validation at the Edge
 
-Developers accessing Atlas platform APIs authenticate via Azure AD. Envoy (via Istio's RequestAuthentication) validates JWTs at the edge before requests reach backend services:
+Developers accessing the platform APIs authenticate via Azure AD. Envoy (via Istio's RequestAuthentication) validates JWTs at the edge before requests reach backend services:
 
 ```yaml
 apiVersion: security.istio.io/v1beta1
