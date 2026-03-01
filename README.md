@@ -2,7 +2,7 @@
 
 Based on “Learning Envoy Proxy” at https://github.com/vanHeemstraSystems/learning-envoyproxy
 
-Envoy Proxy is a high-performance, open-source edge and service proxy designed for cloud-native applications. Originally built at Lyft, it has become the de facto data plane for service meshes (including Istio) and is widely used in platforms such as Azure Kubernetes Service (AKS). This repository provides a systematic, hands-on approach to mastering Envoy Proxy — from core concepts to advanced traffic management and observability integrations relevant to the Atlas IDP project.
+Envoy Proxy is a high-performance, open-source edge and service proxy designed for cloud-native applications. Originally built at Lyft, it has become the de facto data plane for service meshes (including Istio) and is widely used in platforms such as Azure Kubernetes Service (AKS). This repository provides a systematic, hands-on approach to mastering Envoy Proxy — from core concepts to advanced traffic management and observability integrations.
 
 ## Executive Summary
 
