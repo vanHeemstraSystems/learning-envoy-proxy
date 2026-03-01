@@ -23,7 +23,7 @@ This learning repository covers Envoy Proxy architecture, xDS API, listener/clus
 ## Directory Structure
 
 ```
-learning-envoyproxy/
+learning-envoy-proxy/
 ├── README.md
 │
 ├── 100/                                          # Introduction to Envoy Proxy
