@@ -206,7 +206,7 @@ Before working through this repository, ensure you have the following tools inst
 
 ## Related Learning Repositories
 
-This repository is part of the Atlas IDP learning series:
+This repository is part of the learning series:
 
 - [Learning Backstage](https://github.com/vanHeemstraSystems/learning-backstage)
 - [Learning Kubernetes](https://github.com/vanHeemstraSystems/learning-kubernetes)
