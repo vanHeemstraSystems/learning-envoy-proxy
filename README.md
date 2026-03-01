@@ -144,7 +144,7 @@ learning-envoy-proxy/
     ├── 200-kubernetes-integration.md
     ├── 300-istio-and-envoy.md
     ├── 400-envoy-on-aks.md
-    ├── 500-atlas-idp-patterns.md
+    ├── 500-idp-patterns.md
     ├── 600-troubleshooting.md
     └── examples/
         ├── kubernetes-sidecar/
