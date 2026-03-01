@@ -178,7 +178,7 @@ Before working through this repository, ensure you have the following tools inst
 
 **Intermediate** → Sections 400–600: Master dynamic xDS configuration, advanced traffic management, and observability.
 
-**Advanced** → Sections 700–900: Implement security (mTLS, JWT, RBAC), write extensions, and integrate Envoy with Kubernetes and the Atlas IDP.
+**Advanced** → Sections 700–900: Implement security (mTLS, JWT, RBAC), write extensions, and integrate Envoy with Kubernetes and an Internal Developer Platform (IDP).
 
 ## Key Concepts at a Glance
 
