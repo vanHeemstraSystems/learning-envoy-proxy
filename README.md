@@ -217,7 +217,7 @@ This repository is part of the Atlas IDP learning series:
 ## Author
 
 **Willem van Heemstra**  
-Cloud Engineer | Team Rockstars Cloud B.V.  
+Cloud Engineer 
 [GitHub](https://github.com/vanHeemstraSystems)
 
 ## License
